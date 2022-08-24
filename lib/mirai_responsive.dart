@@ -5,4 +5,4 @@ library mirai_responsive;
 * On 8/18/2021.
 */
 
-export 'package:mirai_responsive/src/mirai_responsive_widget.dart';
+export 'package:mirai_responsive/src/mirai_responsive.dart';

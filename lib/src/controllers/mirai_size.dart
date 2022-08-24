@@ -60,21 +60,22 @@ int widthCard= (YOUR WIDTH FOR ONE COLOM);
 int countRow=width~/widthCard;
  */
 
-class MiraiSizeConfig extends ChangeNotifier {
+class MiraiSize extends ChangeNotifier {
   static MiraiResponsiveEnum responsiveEnum = MiraiResponsiveEnum.mobile;
 
+  /// Screen
   static double screenWidth = 392.73;
   static double screenHeight = 856.73;
   static Orientation screenOrientation = Orientation.portrait;
 
   /// Text Sizes
-  static late double textSize20;
-  static late double textSize18;
-  static late double textSize16;
-  static late double textSize14;
-  static late double textSize12;
-  static late double textSize10;
-  static late double textSize8;
+  static double textSize20 = 20;
+  static double textSize18 = 18;
+  static double textSize16 = 16;
+  static double textSize14 = 14;
+  static double textSize12 = 12;
+  static double textSize10 = 10;
+  static double textSize8 = 8;
 
   /// Spaces
   static double space2 = 2;
@@ -91,13 +92,47 @@ class MiraiSizeConfig extends ChangeNotifier {
   static double space24 = 24;
   static double space26 = 26;
   static double space30 = 30;
+  static double space32 = 32;
+  static double space40 = 40;
+  static double space46 = 46;
+  static double space48 = 48;
+  static double space80 = 80;
 
   /// Grid Count
   static double gridCount = 2;
 
+  /// Splash
+  static double splashLogoWidth = 120.0;
+  static double splashLogoHeight = 176.0;
+  static double bottomPadding = -400.0;
+
   /// App Bar Background SVG
   static double appBarBackgroundHeight = 96;
+  static double minHeaderHeight = 260;
+  static double maxHeaderHeight = 300;
   static final double navigationBarBottom = Platform.isIOS ? 16 : 2;
+
+  /// Container Size for loading effects
+  static double containerHeight4 = 4;
+  static double containerHeight8 = 8;
+  static double containerWidth36 = 36;
+  static double containerWidth40 = 40;
+
+  /// Radius
+  static double radius6 = 6;
+  static double radius10 = 10;
+
+  /// Border width
+  static double borderWidth3 = 3;
+
+  /// Image Sizes
+  static double imageSize150 = 150;
+
+  /// Icon Sizes
+  static double iconSize16 = 16;
+  static double iconSize18 = 18;
+  static double iconSize20 = 20;
+  static double iconSize24 = 24;
 
   void init({required BoxConstraints constraints}) {
     screenWidth = constraints.maxWidth;
@@ -106,11 +141,61 @@ class MiraiSizeConfig extends ChangeNotifier {
     /// Small Devices + 60
     if (screenWidth <= 320) {
       responsiveEnum = MiraiResponsiveEnum.smallMobile;
+
+      /// Text Sizes
+      textSize20 = 16;
+      textSize18 = 14;
+      textSize16 = 12;
+      textSize14 = 10;
+      textSize12 = 8;
+      textSize10 = 6;
+      textSize8 = 4;
+
+      /// Spaces
+      space2 = 0;
+      space4 = 0;
+      space6 = 2;
+      space8 = 4;
+      space10 = 6;
+      space12 = 18;
+      space14 = 10;
+      space16 = 12;
+      space18 = 14;
+      space20 = 16;
+      space22 = 18;
+      space24 = 20;
+      space26 = 22;
+      space30 = 26;
     }
 
     /// Medium Devices
     else if (screenWidth > 320 && screenWidth <= 380) {
       responsiveEnum = MiraiResponsiveEnum.mediumMobile;
+
+      /// Text Sizes
+      textSize20 = 18;
+      textSize18 = 16;
+      textSize16 = 14;
+      textSize14 = 12;
+      textSize12 = 10;
+      textSize10 = 8;
+      textSize8 = 6;
+
+      /// Spaces
+      space2 = 0;
+      space4 = 2;
+      space6 = 4;
+      space8 = 6;
+      space10 = 8;
+      space12 = 10;
+      space14 = 12;
+      space16 = 14;
+      space18 = 16;
+      space20 = 18;
+      space22 = 20;
+      space24 = 22;
+      space26 = 24;
+      space30 = 28;
     }
 
     /// Normal Devices

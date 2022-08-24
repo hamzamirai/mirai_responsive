@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 /*
@@ -5,8 +7,10 @@ import 'package:flutter/material.dart';
 * On 8/18/2021.
 */
 
-class MiraiResponsive extends StatelessWidget {
+part 'package:mirai_responsive/src/controllers/mirai_size.dart';
+part 'package:mirai_responsive/src/utils/enums.dart';
 
+class MiraiResponsive extends StatelessWidget {
   const MiraiResponsive({
     Key? key,
     required this.mobile,
