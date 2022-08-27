@@ -99,40 +99,56 @@ class MiraiSize extends ChangeNotifier {
   static double space80 = 80;
 
   /// Grid Count
-  static double gridCount = 2;
+  static int gridCount = 2;
 
   /// Splash
   static double splashLogoWidth = 120.0;
   static double splashLogoHeight = 176.0;
   static double bottomPadding = -400.0;
+  static double paddingBottom = 16;
 
   /// App Bar Background SVG
+  static double appBarBackgroundHeight62 = 62;
   static double appBarBackgroundHeight = 96;
-  static double minHeaderHeight = 260;
-  static double maxHeaderHeight = 300;
+  static double headerHeight210 = 210;
+  static double headerHeight260 = 260;
+  static double headerHeight300 = 300;
   static final double navigationBarBottom = Platform.isIOS ? 16 : 2;
 
   /// Container Size for loading effects
   static double containerHeight4 = 4;
   static double containerHeight8 = 8;
+  static double containerWidth2 = 2;
   static double containerWidth36 = 36;
   static double containerWidth40 = 40;
 
   /// Radius
+  static double radius2 = 2;
   static double radius6 = 6;
   static double radius10 = 10;
+  static double radius20 = 20;
 
   /// Border width
   static double borderWidth3 = 3;
 
   /// Image Sizes
+  static double imageSize56 = 56;
+  static double imageSize60 = 60;
   static double imageSize150 = 150;
 
   /// Icon Sizes
+  static double iconSize12 = 12;
   static double iconSize16 = 16;
   static double iconSize18 = 18;
   static double iconSize20 = 20;
   static double iconSize24 = 24;
+  static double iconSize34 = 34;
+
+  /// Dialog Height
+  static double dialogHeight420 = 420;
+
+  /// Text Field Height
+  static double textFieldHeight216 = 216;
 
   void init({required BoxConstraints constraints}) {
     screenWidth = constraints.maxWidth;
@@ -296,5 +312,9 @@ class MiraiSize extends ChangeNotifier {
 
   void topSafeArea(double top) {
     appBarBackgroundHeight = 66 + top;
+  }
+
+  void setPaddingBottom(double bottom) {
+    paddingBottom = bottom;
   }
 }
