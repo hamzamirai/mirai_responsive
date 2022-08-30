@@ -80,23 +80,36 @@ class MiraiSize extends ChangeNotifier {
   /// Spaces
   static double space2 = 2;
   static double space4 = 4;
+  static double space5 = 5;
   static double space6 = 6;
   static double space8 = 8;
   static double space10 = 10;
   static double space12 = 12;
   static double space14 = 14;
+  static double space15 = 15;
   static double space16 = 16;
   static double space18 = 18;
   static double space20 = 20;
   static double space22 = 22;
   static double space24 = 24;
   static double space26 = 26;
+  static double space28 = 28;
   static double space30 = 30;
   static double space32 = 32;
+  static double space34 = 34;
+  static double space36 = 36;
+  static double space38 = 38;
   static double space40 = 40;
+  static double space42 = 42;
   static double space46 = 46;
   static double space48 = 48;
+  static double space50 = 50;
+  static double space58 = 58;
+  static double space60 = 60;
+  static double space62 = 62;
+  static double space66 = 66;
   static double space80 = 80;
+  static double space86 = 86;
 
   /// Grid Count
   static int gridCount = 2;
@@ -107,42 +120,119 @@ class MiraiSize extends ChangeNotifier {
   static double bottomPadding = -400.0;
   static double paddingBottom = 16;
 
+  /// Bottom Navigation Bar
+  static double bottomNavBarHeight = 58;
+
   /// App Bar Background SVG
   static double appBarBackgroundHeight62 = 62;
-  static double appBarBackgroundHeight = 96;
+  static double appBarBackgroundHeight96 = 96;
+  static double headerHeight172 = 172;
+  static double headerHeight201 = 201;
   static double headerHeight210 = 210;
+  static double headerHeight240 = 240;
   static double headerHeight260 = 260;
   static double headerHeight300 = 300;
   static final double navigationBarBottom = Platform.isIOS ? 16 : 2;
 
   /// Container Size for loading effects
+  static double containerHeight3 = 3;
   static double containerHeight4 = 4;
   static double containerHeight8 = 8;
+  static double containerHeight12 = 12;
+  static double containerHeight16 = 16;
+  static double containerHeight18 = 18;
+  static double containerHeight22 = 22;
+  static double containerHeight26 = 26;
+  static double containerHeight32 = 32;
+  static double containerHeight34 = 34;
+  static double containerHeight40 = 40;
+  static double containerHeight46 = 46;
+  static double containerHeight48 = 48;
+  static double containerHeight50 = 50;
+  static double containerHeight52 = 52;
+  static double containerHeight56 = 56;
+  static double containerHeight58 = 58;
+  static double containerHeight60 = 60;
+  static double containerHeight68 = 68;
+  static double containerHeight84 = 84;
+  static double containerHeight110 = 110;
+  static double containerHeight140 = 140;
+  static double containerHeight160 = 160;
+  static double containerHeight178 = 178;
+  static double containerHeight230 = 230;
+  static double containerHeight300 = 300;
+  static double containerHeight350 = 350;
+  static double containerHeight420 = 420;
+  static double containerHeight500 = 500;
+  // Width
   static double containerWidth2 = 2;
+  static double containerWidth6 = 6;
+  static double containerWidth20 = 20;
+  static double containerWidth24 = 24;
+  static double containerWidth28 = 28;
+  static double containerWidth32 = 32;
   static double containerWidth36 = 36;
   static double containerWidth40 = 40;
+  static double containerWidth52 = 52;
+  static double containerWidth60 = 60;
+  static double containerWidth66 = 66;
+  static double containerWidth80 = 80;
+  static double containerWidth100 = 100;
+  static double containerWidth120 = 120;
+  static double containerWidth140 = 140;
+  static double containerWidth200 = 200;
 
   /// Radius
   static double radius2 = 2;
+  static double radius4 = 4;
+  static double radius5 = 5;
   static double radius6 = 6;
+  static double radius8 = 8;
   static double radius10 = 10;
+  static double radius12 = 12;
+  static double radius16 = 16;
+  static double radius18 = 18;
   static double radius20 = 20;
+  static double radius22 = 22;
+  static double radius50 = 50;
 
   /// Border width
+  static double borderWidth1 = 1;
+  static double borderWidth2 = 2;
   static double borderWidth3 = 3;
+  static double borderWidth4 = 4;
 
   /// Image Sizes
   static double imageSize56 = 56;
   static double imageSize60 = 60;
+  static double imageSize84 = 84;
+  static double imageSize674 = 74;
+  static double imageSize144 = 144;
   static double imageSize150 = 150;
+  static double imageSize160 = 160;
+  static double imageSize278 = 278;
 
   /// Icon Sizes
+  static double iconSize10 = 10;
   static double iconSize12 = 12;
   static double iconSize16 = 16;
+  static double iconSize14 = 14;
   static double iconSize18 = 18;
   static double iconSize20 = 20;
+  static double iconSize22 = 22;
   static double iconSize24 = 24;
+  static double iconSize26 = 26;
+  static double iconSize30 = 30;
+  static double iconSize32 = 32;
   static double iconSize34 = 34;
+  static double iconSize36 = 36;
+  static double iconSize42 = 42;
+  static double iconSize50 = 50;
+  static double iconSize58 = 58;
+  static double iconSize64 = 64;
+  static double iconSize66 = 66;
+  static double iconSize70 = 70;
+  static double iconSize82 = 82;
 
   /// Dialog Height
   static double dialogHeight420 = 420;
@@ -310,11 +400,11 @@ class MiraiSize extends ChangeNotifier {
     }
   }
 
-  void topSafeArea(double top) {
-    appBarBackgroundHeight = 66 + top;
+  static void topSafeArea(double top) {
+    appBarBackgroundHeight96 = 66 + top;
   }
 
-  void setPaddingBottom(double bottom) {
+  static void setPaddingBottom(double bottom) {
     paddingBottom = bottom;
   }
 }
