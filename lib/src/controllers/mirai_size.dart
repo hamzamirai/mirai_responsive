@@ -167,6 +167,8 @@ class MiraiSize extends ChangeNotifier {
   // Width
   static double containerWidth2 = 2;
   static double containerWidth6 = 6;
+  static double containerWidth16 = 16;
+  static double containerWidth18 = 18;
   static double containerWidth20 = 20;
   static double containerWidth24 = 24;
   static double containerWidth28 = 28;
@@ -201,10 +203,12 @@ class MiraiSize extends ChangeNotifier {
   static double borderWidth2 = 2;
   static double borderWidth3 = 3;
   static double borderWidth4 = 4;
+  static double borderWidth8 = 8;
 
   /// Image Sizes
   static double imageSize56 = 56;
   static double imageSize60 = 60;
+  static double imageSize70 = 70;
   static double imageSize84 = 84;
   static double imageSize674 = 74;
   static double imageSize144 = 144;
@@ -229,6 +233,7 @@ class MiraiSize extends ChangeNotifier {
   static double iconSize42 = 42;
   static double iconSize50 = 50;
   static double iconSize58 = 58;
+  static double iconSize62 = 62;
   static double iconSize64 = 64;
   static double iconSize66 = 66;
   static double iconSize70 = 70;
