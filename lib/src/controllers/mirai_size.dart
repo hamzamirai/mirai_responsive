@@ -138,6 +138,7 @@ class MiraiSize extends ChangeNotifier {
   static double containerHeight3 = 3;
   static double containerHeight4 = 4;
   static double containerHeight8 = 8;
+  static double containerHeight10 = 10;
   static double containerHeight12 = 12;
   static double containerHeight16 = 16;
   static double containerHeight18 = 18;
@@ -155,6 +156,8 @@ class MiraiSize extends ChangeNotifier {
   static double containerHeight60 = 60;
   static double containerHeight68 = 68;
   static double containerHeight84 = 84;
+  static double containerHeight90 = 90;
+  static double containerHeight100 = 100;
   static double containerHeight110 = 110;
   static double containerHeight140 = 140;
   static double containerHeight160 = 160;
@@ -167,11 +170,13 @@ class MiraiSize extends ChangeNotifier {
   // Width
   static double containerWidth2 = 2;
   static double containerWidth6 = 6;
+  static double containerWidth10 = 10;
   static double containerWidth16 = 16;
   static double containerWidth18 = 18;
   static double containerWidth20 = 20;
   static double containerWidth24 = 24;
   static double containerWidth28 = 28;
+  static double containerWidth30 = 30;
   static double containerWidth32 = 32;
   static double containerWidth36 = 36;
   static double containerWidth40 = 40;
@@ -182,7 +187,10 @@ class MiraiSize extends ChangeNotifier {
   static double containerWidth100 = 100;
   static double containerWidth120 = 120;
   static double containerWidth140 = 140;
+  static double containerWidth160 = 160;
   static double containerWidth200 = 200;
+  static double containerWidth240 = 240;
+  static double containerWidth260 = 260;
 
   /// Radius
   static double radius2 = 2;
