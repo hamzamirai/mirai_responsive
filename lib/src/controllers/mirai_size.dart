@@ -69,6 +69,7 @@ class MiraiSize extends ChangeNotifier {
   static Orientation screenOrientation = Orientation.portrait;
 
   /// Text Sizes
+  static double textSize26 = 26;
   static double textSize20 = 20;
   static double textSize18 = 18;
   static double textSize16 = 16;
@@ -101,6 +102,7 @@ class MiraiSize extends ChangeNotifier {
   static double space38 = 38;
   static double space40 = 40;
   static double space42 = 42;
+  static double space44 = 44;
   static double space46 = 46;
   static double space48 = 48;
   static double space50 = 50;
@@ -183,6 +185,7 @@ class MiraiSize extends ChangeNotifier {
   static double containerWidth52 = 52;
   static double containerWidth60 = 60;
   static double containerWidth66 = 66;
+  static double containerWidth72 = 72;
   static double containerWidth80 = 80;
   static double containerWidth100 = 100;
   static double containerWidth120 = 120;
@@ -239,6 +242,7 @@ class MiraiSize extends ChangeNotifier {
   static double iconSize34 = 34;
   static double iconSize36 = 36;
   static double iconSize42 = 42;
+  static double iconSize44 = 44;
   static double iconSize50 = 50;
   static double iconSize58 = 58;
   static double iconSize62 = 62;
