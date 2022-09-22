@@ -127,6 +127,7 @@ class MiraiSize extends ChangeNotifier {
 
   /// Bottom Navigation Bar
   static double bottomNavBarHeight = 58;
+  static double bottomNavBarHeight94 = 94;
 
   /// App Bar Background SVG
   static double appBarBackgroundHeight62 = 62;
