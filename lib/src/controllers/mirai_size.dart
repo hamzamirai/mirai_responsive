@@ -131,6 +131,7 @@ class MiraiSize extends ChangeNotifier {
   /// App Bar Background SVG
   static double appBarBackgroundHeight62 = 62;
   static double appBarBackgroundHeight96 = 96;
+  static double appBarBackgroundHeight136 = 136;
   static double headerHeight172 = 172;
   static double headerHeight201 = 201;
   static double headerHeight210 = 210;
@@ -247,6 +248,7 @@ class MiraiSize extends ChangeNotifier {
   static double iconSize36 = 36;
   static double iconSize42 = 42;
   static double iconSize44 = 44;
+  static double iconSize48 = 48;
   static double iconSize50 = 50;
   static double iconSize58 = 58;
   static double iconSize62 = 62;
