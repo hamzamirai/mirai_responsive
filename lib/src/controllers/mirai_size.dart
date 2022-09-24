@@ -212,6 +212,8 @@ class MiraiSize extends ChangeNotifier {
   static double radius18 = 18;
   static double radius20 = 20;
   static double radius22 = 22;
+  static double radius24 = 24;
+  static double radius28 = 28;
   static double radius50 = 50;
 
   /// Border width
@@ -247,6 +249,8 @@ class MiraiSize extends ChangeNotifier {
   static double iconSize32 = 32;
   static double iconSize34 = 34;
   static double iconSize36 = 36;
+  static double iconSize38 = 38;
+  static double iconSize40 = 40;
   static double iconSize42 = 42;
   static double iconSize44 = 44;
   static double iconSize48 = 48;
@@ -257,6 +261,7 @@ class MiraiSize extends ChangeNotifier {
   static double iconSize66 = 66;
   static double iconSize70 = 70;
   static double iconSize82 = 82;
+  static double iconSize98 = 98;
 
   /// Dialog Height
   static double dialogHeight420 = 420;
