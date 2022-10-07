@@ -151,6 +151,7 @@ class MiraiSize extends ChangeNotifier {
   static double containerHeight18 = 18;
   static double containerHeight22 = 22;
   static double containerHeight26 = 26;
+  static double containerHeight28 = 28;
   static double containerHeight32 = 32;
   static double containerHeight34 = 34;
   static double containerHeight40 = 40;
@@ -198,6 +199,7 @@ class MiraiSize extends ChangeNotifier {
   static double containerWidth160 = 160;
   static double containerWidth200 = 200;
   static double containerWidth240 = 240;
+  static double containerWidth246 = 246;
   static double containerWidth260 = 260;
 
   /// Radius
