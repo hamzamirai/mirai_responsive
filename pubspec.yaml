@@ -1,10 +1,10 @@
 name: mirai_responsive
-description: Responsive UI Package Created By Mirai Devs.
-version: 0.0.1
+description: MiraiDevs developed the Mirai Responsive Package for Custom Sizes For Any Mobile Device.
+version: 0.0.1+1
 homepage: https://github.com/devhch/mirai_responsive
 
 environment:
-  sdk: ">=2.17.6 <3.0.0"
+  sdk: ">=2.18.0 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
@@ -14,8 +14,6 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-
 
 # The following section is specific to Flutter.
 flutter:
