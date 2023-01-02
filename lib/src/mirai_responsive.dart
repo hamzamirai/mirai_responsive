@@ -14,17 +14,17 @@ class MiraiResponsive extends StatelessWidget {
   const MiraiResponsive({
     Key? key,
     required this.mobile,
-    this.tablet,
-    required this.desktop,
+    required this.tablet,
+    this.desktop,
     this.landscapeMobileLayout,
     this.landscapeTabletLayout,
   }) : super(key: key);
 
   final Widget mobile;
   final Widget? landscapeMobileLayout;
-  final Widget? tablet;
+  final Widget tablet;
   final Widget? landscapeTabletLayout;
-  final Widget desktop;
+  final Widget? desktop;
 
   /// isMobile
   static bool isMobile(BuildContext context) =>
@@ -44,14 +44,14 @@ class MiraiResponsive extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         if (constraints.maxWidth >= 1200) {
-          return desktop;
+          return desktop ?? tablet;
         } else if (constraints.maxWidth >= 800) {
           return OrientationBuilder(
             builder: (context, orientation) {
               if (orientation == Orientation.portrait) {
-                return tablet ?? mobile;
+                return tablet;
               } else {
-                return landscapeTabletLayout ?? tablet ?? mobile;
+                return landscapeTabletLayout ?? tablet;
               }
             },
           );

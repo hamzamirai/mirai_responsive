@@ -268,6 +268,7 @@ class MiraiSize extends ChangeNotifier {
   static double iconSize64 = 64;
   static double iconSize66 = 66;
   static double iconSize70 = 70;
+  static double space76 = 76;
   static double iconSize82 = 82;
   static double iconSize98 = 98;
 
@@ -280,6 +281,8 @@ class MiraiSize extends ChangeNotifier {
   void init({required BoxConstraints constraints}) {
     screenWidth = constraints.maxWidth;
     screenHeight = constraints.maxHeight;
+    debugPrint('screenWidth: $screenWidth');
+    debugPrint('screenHeight: $screenHeight');
 
     /// Small Devices + 60
     if (screenWidth <= 320) {
