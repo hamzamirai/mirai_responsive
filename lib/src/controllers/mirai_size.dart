@@ -78,6 +78,7 @@ class MiraiSize extends ChangeNotifier {
   static double textSize20 = 20;
   static double textSize18 = 18;
   static double textSize16 = 16;
+  static double textSize15 = 15;
   static double textSize14 = 14;
   static double textSize12 = 12;
   static double textSize10 = 10;
@@ -116,8 +117,10 @@ class MiraiSize extends ChangeNotifier {
   static double space60 = 60;
   static double space62 = 62;
   static double space66 = 66;
+  static double space76 = 76;
   static double space80 = 80;
   static double space86 = 86;
+  static double space100 = 100;
 
   /// Grid Count
   static int gridCount = 2;
@@ -215,11 +218,13 @@ class MiraiSize extends ChangeNotifier {
   static double radius8 = 8;
   static double radius10 = 10;
   static double radius12 = 12;
+  static double radius14 = 14;
   static double radius16 = 16;
   static double radius18 = 18;
   static double radius20 = 20;
   static double radius22 = 22;
   static double radius24 = 24;
+  static double radius26 = 26;
   static double radius28 = 28;
   static double radius50 = 50;
 
@@ -268,7 +273,6 @@ class MiraiSize extends ChangeNotifier {
   static double iconSize64 = 64;
   static double iconSize66 = 66;
   static double iconSize70 = 70;
-  static double space76 = 76;
   static double iconSize82 = 82;
   static double iconSize98 = 98;
 
