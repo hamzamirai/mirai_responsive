@@ -75,6 +75,7 @@ class MiraiSize extends ChangeNotifier {
   static double textSize28 = 28;
   static double textSize26 = 26;
   static double textSize24 = 24;
+  static double textSize22 = 22;
   static double textSize20 = 20;
   static double textSize18 = 18;
   static double textSize16 = 16;
@@ -104,6 +105,7 @@ class MiraiSize extends ChangeNotifier {
   static double space30 = 30;
   static double space32 = 32;
   static double space34 = 34;
+  static double space35 = 35;
   static double space36 = 36;
   static double space38 = 38;
   static double space40 = 40;
@@ -118,8 +120,10 @@ class MiraiSize extends ChangeNotifier {
   static double space62 = 62;
   static double space66 = 66;
   static double space76 = 76;
+  static double space74 = 74;
   static double space80 = 80;
   static double space86 = 86;
+  static double space90 = 90;
   static double space100 = 100;
 
   /// Grid Count
@@ -139,6 +143,7 @@ class MiraiSize extends ChangeNotifier {
   /// App Bar Background SVG
   static double appBarBackgroundHeight62 = 62;
   static double appBarBackgroundHeight96 = 96;
+  static double appBarBackgroundHeight120 = 120;
   static double appBarBackgroundHeight136 = 136;
   static double headerHeight172 = 172;
   static double headerHeight201 = 201;
