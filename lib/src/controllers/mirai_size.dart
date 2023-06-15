@@ -356,6 +356,7 @@ class MiraiSize extends ChangeNotifier {
     /// Normal Devices
     else if (screenWidth > 380 && screenWidth <= 440) {
       responsiveEnum = MiraiResponsiveEnum.mobile;
+      gridCount = 2;
 
       /// Text Sizes
       textSize20 = 20;
@@ -386,6 +387,7 @@ class MiraiSize extends ChangeNotifier {
     /// mobile
     else if (screenWidth > 440 && screenWidth <= 500) {
       responsiveEnum = MiraiResponsiveEnum.mobile;
+      gridCount = 3;
     }
 
     /// mobile
@@ -397,7 +399,7 @@ class MiraiSize extends ChangeNotifier {
     /// largeMobile
     else if (screenWidth > 660 && screenWidth <= 720) {
       responsiveEnum = MiraiResponsiveEnum.largeMobile;
-      gridCount = 3;
+      gridCount = 4;
     }
 
     /// xLargeMobile
@@ -426,6 +428,7 @@ class MiraiSize extends ChangeNotifier {
     /// tablet
     else if (screenWidth > 960 && screenWidth <= 1020) {
       responsiveEnum = MiraiResponsiveEnum.tablet;
+      gridCount = 5;
     }
 
     /// tablet
@@ -446,6 +449,7 @@ class MiraiSize extends ChangeNotifier {
     /// desktop
     else {
       responsiveEnum = MiraiResponsiveEnum.desktop;
+      gridCount = 6;
     }
   }
 
