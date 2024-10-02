@@ -27,11 +27,11 @@ class MiraiResponsive extends StatelessWidget {
   final Widget? desktop;
 
   /// isMobile
-  static bool isMobile(BuildContext context) => MediaQuery.of(context).size.width < 700;
+  static bool isMobile(BuildContext context) => MediaQuery.of(context).size.width < 600;
 
   /// isTablet
   static bool isTablet(BuildContext context) =>
-      MediaQuery.of(context).size.width >= 700 && MediaQuery.of(context).size.width < 1200;
+      MediaQuery.of(context).size.width >= 600 && MediaQuery.of(context).size.width < 1200;
 
   /// isDesktop
   static bool isDesktop(BuildContext context) => MediaQuery.of(context).size.width >= 1200;
