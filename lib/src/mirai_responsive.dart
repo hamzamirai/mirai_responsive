@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 */
 
 part 'package:mirai_responsive/src/controllers/mirai_size.dart';
+
 part 'package:mirai_responsive/src/utils/enums.dart';
 
 class MiraiResponsive extends StatelessWidget {
@@ -27,11 +28,11 @@ class MiraiResponsive extends StatelessWidget {
   final Widget? desktop;
 
   /// isMobile
-  static bool isMobile(BuildContext context) => MediaQuery.of(context).size.width < 600;
+  static bool isMobile(BuildContext context) => MediaQuery.of(context).size.width < 700;
 
   /// isTablet
   static bool isTablet(BuildContext context) =>
-      MediaQuery.of(context).size.width >= 600 && MediaQuery.of(context).size.width < 1200;
+      MediaQuery.of(context).size.width >= 700 && MediaQuery.of(context).size.width < 1200;
 
   /// isDesktop
   static bool isDesktop(BuildContext context) => MediaQuery.of(context).size.width >= 1200;

@@ -1,3 +1,9 @@
+## 0.0.3+1 - 2024-10-02
+
+- isMobile: Less than 700 pixels.
+- isTablet: Between 700 and 1200 pixels.
+- isDesktop: Above 1200 pixels.
+
 ## 0.0.3 - 2024-10-02
 
 - Upgrade to Flutter 3.24.3.
@@ -23,7 +29,6 @@
 ## 0.0.1+1 - 2022-11-16
 
 - New Sizes...
--
 
 ## 0.0.1
 
