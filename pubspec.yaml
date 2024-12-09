@@ -1,6 +1,6 @@
 name: mirai_responsive
 description: MiraiDevs developed the Mirai Responsive Package for Custom Sizes For Any Mobile Device.
-version: 0.0.3+1
+version: 0.0.4
 homepage: https://github.com/devhch/mirai_responsive
 
 environment:

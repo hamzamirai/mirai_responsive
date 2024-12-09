@@ -1,3 +1,16 @@
+## 0.0.4 - 2024-12-09
+
+- Update to Flutter 3.24.5 and Dart SDK 3.5.4
+- Optimize grid system with precise breakpoints:
+    - Small/Medium Mobile (≤380px): 2 columns
+    - Normal Mobile (≤500px): 3 columns
+    - Large Mobile (≤840px): 4 columns
+    - Tablet (≤1200px): 5 columns
+    - Desktop (>1200px): 6 columns
+- Add LayoutBuilder for improved constraint management and screen size detection
+- Improve responsive size handling with better breakpoints
+- Update documentation with detailed screen size categories and grid system usage
+
 ## 0.0.3+1 - 2024-10-02
 
 - isMobile: Less than 700 pixels.
