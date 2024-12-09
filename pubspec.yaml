@@ -4,7 +4,7 @@ version: 0.0.3+1
 homepage: https://github.com/devhch/mirai_responsive
 
 environment:
-  sdk: ">=3.5.3 <4.0.0"
+  sdk: ">=3.5.4 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:

@@ -1,7 +1,7 @@
 library mirai_responsive;
 
 /*
-* Created By Mirai Devs.
+* Created By MiraiDevs.
 * On 8/18/2021.
 */
 

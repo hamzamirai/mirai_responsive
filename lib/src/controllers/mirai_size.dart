@@ -1,5 +1,5 @@
 /*
-* Created By Mirai Devs.
+* Created By MiraiDevs.
 * On 8/30/2021.
 */
 
@@ -293,164 +293,120 @@ class MiraiSize extends ChangeNotifier {
     debugPrint('screenWidth: $screenWidth');
     debugPrint('screenHeight: $screenHeight');
 
-    /// Small Devices + 60
-    if (screenWidth <= 320) {
-      responsiveEnum = MiraiResponsiveEnum.smallMobile;
-
-      /// Text Sizes
-      textSize20 = 16;
-      textSize18 = 14;
-      textSize16 = 12;
-      textSize14 = 10;
-      textSize12 = 8;
-      textSize10 = 6;
-      textSize8 = 4;
-
-      /// Spaces
-      space2 = 0;
-      space4 = 0;
-      space6 = 2;
-      space8 = 4;
-      space10 = 6;
-      space12 = 18;
-      space14 = 10;
-      space16 = 12;
-      space18 = 14;
-      space20 = 16;
-      space22 = 18;
-      space24 = 20;
-      space26 = 22;
-      space30 = 26;
-    }
-
-    /// Medium Devices
-    else if (screenWidth > 320 && screenWidth <= 380) {
-      responsiveEnum = MiraiResponsiveEnum.mediumMobile;
-
-      /// Text Sizes
-      textSize20 = 18;
-      textSize18 = 16;
-      textSize16 = 14;
-      textSize14 = 12;
-      textSize12 = 10;
-      textSize10 = 8;
-      textSize8 = 6;
-
-      /// Spaces
-      space2 = 0;
-      space4 = 2;
-      space6 = 4;
-      space8 = 6;
-      space10 = 8;
-      space12 = 10;
-      space14 = 12;
-      space16 = 14;
-      space18 = 16;
-      space20 = 18;
-      space22 = 20;
-      space24 = 22;
-      space26 = 24;
-      space30 = 28;
-    }
-
-    /// Normal Devices
-    else if (screenWidth > 380 && screenWidth <= 440) {
-      responsiveEnum = MiraiResponsiveEnum.mobile;
+    // Handle gridCount based on screen width ranges
+    if (screenWidth <= 380) {
       gridCount = 2;
-
-      /// Text Sizes
-      textSize20 = 20;
-      textSize18 = 18;
-      textSize16 = 16;
-      textSize14 = 14;
-      textSize12 = 12;
-      textSize10 = 10;
-      textSize8 = 8;
-
-      /// Spaces
-      space2 = 2;
-      space4 = 4;
-      space6 = 6;
-      space8 = 8;
-      space10 = 10;
-      space12 = 12;
-      space14 = 14;
-      space16 = 16;
-      space18 = 18;
-      space20 = 20;
-      space22 = 22;
-      space24 = 24;
-      space26 = 26;
-      space30 = 30;
-    }
-
-    /// mobile
-    else if (screenWidth > 440 && screenWidth <= 500) {
-      responsiveEnum = MiraiResponsiveEnum.mobile;
+    } else if (screenWidth <= 500) {
       gridCount = 3;
-    }
-
-    /// mobile
-    else if (screenWidth > 500 && screenWidth <= 660) {
-      responsiveEnum = MiraiResponsiveEnum.mobile;
-      gridCount = 3;
-    }
-
-    /// largeMobile
-    else if (screenWidth > 660 && screenWidth <= 720) {
-      responsiveEnum = MiraiResponsiveEnum.largeMobile;
+    } else if (screenWidth <= 840) {
       gridCount = 4;
-    }
-
-    /// xLargeMobile
-    else if (screenWidth > 720 && screenWidth <= 780) {
-      responsiveEnum = MiraiResponsiveEnum.xLargeMobile;
-      gridCount = 4;
-    }
-
-    /// xLargeMobile
-    else if (screenWidth > 780 && screenWidth <= 840) {
-      responsiveEnum = MiraiResponsiveEnum.xLargeMobile;
-      gridCount = 4;
-    }
-
-    /// tablet
-    else if (screenWidth > 840 && screenWidth <= 900) {
-      responsiveEnum = MiraiResponsiveEnum.tablet;
+    } else if (screenWidth <= 1200) {
       gridCount = 5;
-    }
-
-    /// tablet
-    else if (screenWidth > 900 && screenWidth <= 960) {
-      responsiveEnum = MiraiResponsiveEnum.tablet;
-    }
-
-    /// tablet
-    else if (screenWidth > 960 && screenWidth <= 1020) {
-      responsiveEnum = MiraiResponsiveEnum.tablet;
-      gridCount = 5;
-    }
-
-    /// tablet
-    else if (screenWidth > 1020 && screenWidth <= 1080) {
-      responsiveEnum = MiraiResponsiveEnum.tablet;
-    }
-
-    /// tablet
-    else if (screenWidth > 1080 && screenWidth <= 1140) {
-      responsiveEnum = MiraiResponsiveEnum.tablet;
-    }
-
-    /// tablet
-    else if (screenWidth >= 1140 && screenWidth <= 1200) {
-      responsiveEnum = MiraiResponsiveEnum.tablet;
-    }
-
-    /// desktop
-    else {
-      responsiveEnum = MiraiResponsiveEnum.desktop;
+    } else {
       gridCount = 6;
     }
+
+    // Then handle device-specific size adjustments
+    if (screenWidth <= 320) {
+      responsiveEnum = MiraiResponsiveEnum.smallMobile;
+      _adjustSmallMobileSize();
+    } else if (screenWidth <= 380) {
+      responsiveEnum = MiraiResponsiveEnum.mediumMobile;
+      _adjustMediumMobileSize();
+    } else if (screenWidth <= 440) {
+      responsiveEnum = MiraiResponsiveEnum.mobile;
+      _adjustNormalMobileSize();
+    } else if (screenWidth <= 660) {
+      responsiveEnum = MiraiResponsiveEnum.mobile;
+    } else if (screenWidth <= 840) {
+      responsiveEnum = MiraiResponsiveEnum.largeMobile;
+    } else if (screenWidth <= 1200) {
+      responsiveEnum = MiraiResponsiveEnum.tablet;
+    } else {
+      responsiveEnum = MiraiResponsiveEnum.desktop;
+    }
+  }
+
+  // Helper methods for size adjustments
+  void _adjustSmallMobileSize() {
+    // Text Sizes
+    textSize20 = 16;
+    textSize18 = 14;
+    textSize16 = 12;
+    textSize14 = 10;
+    textSize12 = 8;
+    textSize10 = 6;
+    textSize8 = 4;
+
+    // Spaces
+    space2 = 0;
+    space4 = 0;
+    space6 = 2;
+    space8 = 4;
+    space10 = 6;
+    space12 = 18;
+    space14 = 10;
+    space16 = 12;
+    space18 = 14;
+    space20 = 16;
+    space22 = 18;
+    space24 = 20;
+    space26 = 22;
+    space30 = 26;
+  }
+
+  void _adjustMediumMobileSize() {
+    // Text Sizes
+    textSize20 = 18;
+    textSize18 = 16;
+    textSize16 = 14;
+    textSize14 = 12;
+    textSize12 = 10;
+    textSize10 = 8;
+    textSize8 = 6;
+
+    // Spaces
+    space2 = 0;
+    space4 = 2;
+    space6 = 4;
+    space8 = 6;
+    space10 = 8;
+    space12 = 10;
+    space14 = 12;
+    space16 = 14;
+    space18 = 16;
+    space20 = 18;
+    space22 = 20;
+    space24 = 22;
+    space26 = 24;
+    space30 = 28;
+  }
+
+  void _adjustNormalMobileSize() {
+    // Text Sizes
+    textSize20 = 20;
+    textSize18 = 18;
+    textSize16 = 16;
+    textSize14 = 14;
+    textSize12 = 12;
+    textSize10 = 10;
+    textSize8 = 8;
+
+    // Spaces
+    space2 = 2;
+    space4 = 4;
+    space6 = 6;
+    space8 = 8;
+    space10 = 10;
+    space12 = 12;
+    space14 = 14;
+    space16 = 16;
+    space18 = 18;
+    space20 = 20;
+    space22 = 22;
+    space24 = 24;
+    space26 = 26;
+    space30 = 30;
   }
 
   static void topSafeArea(double top) {
